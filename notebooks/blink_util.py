@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def get_FoH(df):
+def get_FoH(df, verbose=False):
     P = df['period'].to_numpy()
     phi1 = df['phi1'].to_numpy()
     phi3 = df['phi3'].to_numpy()
@@ -17,7 +17,8 @@ def get_FoH(df):
         while Val > 2*np.pi:
             Val -= 2*np.pi
         phi31[i] = Val
-        print(f'Was {OldVal} and now is {Val}.')
+        if verbose:
+            print(f'Was {OldVal} and now is {Val}.')
 
     phi31
 
