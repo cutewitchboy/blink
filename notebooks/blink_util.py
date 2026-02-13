@@ -17,7 +17,7 @@ def get_FoH(df, verbose=False):
         while Val > 2*np.pi:
             Val -= 2*np.pi
         phi31[i] = Val
-        if verbose:
+        if verbose == True:
             print(f'Was {OldVal} and now is {Val}.')
 
     phi31
