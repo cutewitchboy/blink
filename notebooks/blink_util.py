@@ -5,7 +5,7 @@ def twopi_normalize(phi_n1, phi_n2, coef, verbose=False):
     """
     Docstring for twopi_normalize
 
-    Generates phi_sub_n1n2 where phi_sub_n1n2 = phi_sub_n2 - N2*phi_sub_n1
+    Generates phi_sub_n2n1 where phi_sub_n1n2 = phi_sub_n2 - N2*phi_sub_n1
     
     :param phi_n1: phi_sub_n1 where n1 is an integer
     :param phi_n2: phi_sub_n2 where n2 is an integer not equals n1
