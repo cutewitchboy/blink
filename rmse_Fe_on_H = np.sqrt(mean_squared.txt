@@ -1,0 +1,3 @@
+rmse_Fe_on_H = np.sqrt(mean_squared_error(y, Fe_on_H))
+performance_df["RMSE_vs_FeH"] = performance_df["RMSE"] - rmse_Fe_on_H
+performance_df[["Model", "RMSE", "RMSE_vs_FeH"]]
